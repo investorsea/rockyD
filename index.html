@@ -164,6 +164,7 @@
 <p>but hexo deploy failed, I used git commit to update static website.<br>git add .<br>git commit -m ‘test1’<br>git push</p>
 <p>缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br>npm i hexo-generator-json-content –save</p>
 <p>3、在根目录_config.yml里添加配置：</p>
+<p>  jsonContent:<br>    meta: false<br>    pages: false<br>    posts:<br>      title: true<br>      date: true<br>      path: true<br>      text: false<br>      raw: false<br>      content: false<br>      slug: false<br>      updated: false<br>      comments: false<br>      link: false<br>      permalink: false<br>      excerpt: false<br>      categories: false<br>      tags: true</p>
 
       
 
