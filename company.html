@@ -1,82 +1,19 @@
 <!doctype html>
 <html lang="zh">
-  <head>
-    <title>iDIY</title>
-    <!-- Required meta tags -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/css?family=Alkatra" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
-    <script src="https://kit.fontawesome.com/adce64e278.js" crossorigin="anonymous"></script>
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      .logo {
-        font-family: Alkatra, Monospace;
-      }
-      .logo2 {
-        font-family: "ZCOOL KuaiLe", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-      /* Move down content because we have a fixed navbar that is 3.5rem tall */
-      .jumbotron {
-        padding-top: 7.5rem;
-      }
-      .jumbotron0 {
-        padding-top: 5.5rem;
-      }
-
-      .navbar-dark .navbar-nav .nav-item .nav-link:focus,
-      .navbar-dark .navbar-nav .nav-item .nav-link:hover {
-        color: black;
-        background: lightyellow;
-      }
-      footer {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-      }
-
-      footer p {
-        margin-bottom: .25rem;
-      }
-
-      .my-button {
-      background-color: #0000ff;
-      border-color: #0000ff;
-    }
-
-    </style>
-  </head>
+  <!-- load header -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <div w3-include-html="./assets/html/header.html"></div>
+  <script>w3.includeHTML();</script>
 
   <body>
   
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark">
     <a class="navbar-brand logo" href="#" id="">DIY-Investors</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="navbar-collapse" id="navbarsExampleDefault">
+    <div class="navbar" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto font-weight-bold">
         <li class="nav-item">
           <a class="nav-link" href="./index_cn.html">主页 <span class="sr-only">(current)</span></a>
@@ -93,6 +30,7 @@
         <li class="nav-item">
           <a class="nav-link"  href="#">资源</a>
         </li>   
+        <!-- 
         <li class="nav-item">
           <a class="nav-link"  href="#">大师</a>
         </li>          
@@ -110,21 +48,20 @@
         </li>  
         <li class="nav-item">
           <a class="nav-link"  href="#">成为会员</a>
-        </li>         
+        </li>          -->
         <li class="nav-item">
-          <a class="nav-link active"  href="./company.html">公司介绍</a>
+          <a class="nav-link active"  href="./company.html">关于</a>
         </li> 
       </ul>
-      <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-  
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown" aria-expanded="false">公司</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="./company.html">公司介绍</a>
-            <a class="dropdown-item" href="./company.html">加入我们</a>
-            <a class="dropdown-item" href="./company.html">联系我们</a>
-          </div>
-        </li> -->
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown" aria-expanded="false">公司</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="./company.html">公司介绍</a>
+          <a class="dropdown-item" href="./company.html">加入我们</a>
+          <a class="dropdown-item" href="./company.html">联系我们</a>
+        </div>
+      </li> -->
+      <!-- <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
         <li class="nav-item">
           <a class="nav-link active"  href="./index_cn.html">简</a>
         </li>
@@ -134,7 +71,7 @@
         <li class="nav-item active">
           <a class="nav-link"  href="./index_en.html">En</a>
         </li>
-      </ul>
+      </ul> -->
 
       <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -148,15 +85,12 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
-    <div class="jumbotron0">
-      <div class="container">
-      </div>
-    </div>
-    <section class="">
+    <section class="jumbotron0">
       <!-- Example row of columns -->
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
+            <br>
             <h2>公司介绍</h2>
             <!-- <ul class="container-fluid lead list-group text-justify-center font-weight-bold">
               <li class="list-group-item text-dark list-group-item-warning">专注(Dedicated), 韧性(Resilience) 和 长期主义的坚持(Persistence)</li>
@@ -179,6 +113,9 @@
           </p>
           <p>
             战胜市场并不简单，投资本身即是一件复杂的竞赛。我们无法承诺你财富，但可以帮助你更好的理解市场和积累投资智慧。我们将提供给您机构级别的市场数据和分析工具。帮助你学习成长和建立自己的投资流程。
+          </p>
+          <p class = "lead text-center">
+            我们的愿景是让所有人都可拥有最专业的投资工具
           </p>
           <p>
             <h6 class="font-weight-bold">为什么要成为自助投资者？</h6>
@@ -205,7 +142,7 @@
   
         <div class="row">
           <div class="col-md-12">
-            <h2>加入我们</h2>
+            <h2 class="col-md-12 text-center">加入我们</h2>
               我们一直在寻找优秀的科技人才和对投资理财感兴趣的朋友：
               如果你对投资理财感兴趣，并计划把此做为自己的长期发展事业，我们愿听听你的故事。
               或者你具备前端，后端或者全栈开发的工作经验，有意加入初创公司，请通过留言联系我们.
@@ -220,7 +157,7 @@
     <section class="form-section">
       <div class="container-fluid py-5">
         <div class="container">
-          <h2>联系我们</h2>
+          <h2 class="col-md-12 text-center">联系我们</h2>
           <hr>
           <div class="row">
             <div class="col-md-8">
@@ -287,15 +224,8 @@
 
 </main>    
 
-<footer class="bg-body-tertiary text-center text-lg-start">
-  <hr>
-  <p class="float-right">
-    <a href="#">顶部</a>
-  </p>
-  <p>&copy; Company 2024-2025 iDIY.com All Rights Reserved</p>
-</footer>
-
-
+    <div w3-include-html="./assets/html/footer.html"></div>
+    <script>w3.includeHTML();</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
